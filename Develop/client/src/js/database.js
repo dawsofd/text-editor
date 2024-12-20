@@ -32,7 +32,7 @@ export const getDb = async () => {
   const store = tx.objectStore('notes');
   const request = store.getAll();
   const result = await request;
-  console.log("result.value", result);
+  console.log('result.value', result);
   console.error('getDb not implemented');
   return result;
 };
